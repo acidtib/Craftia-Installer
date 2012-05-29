@@ -8,8 +8,14 @@ PAUSE
 :: Move to %appdata%/.minecraft/bin
 cd %appdata%/.minecraft/bin
 
+:: Delete current minecraft.jar
+DEL minecraft.jar
 
-:: Download zip file
-::wget.exe http://craftia.kurubit.com/installer/installer.zip
+:: Download moded minecraft.jar
+wget.exe http://craftia.kurubit.com/installer/windows/minecraft.jar
+
+
+::MOVE /Y minecraft.jar %appdata%\.minecraft\bin
+
 
 PAUSE
